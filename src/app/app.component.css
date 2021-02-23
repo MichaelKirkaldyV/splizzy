@@ -69,12 +69,12 @@ a.nav-link {
   font-weight: bold;
 }
 
-footer {
+.footer {
   background-color: black;
-  height: 165px;
+  height: 185px;
 }
 
-footer p {
+.footer p {
   color: whitesmoke;
 }
 
@@ -83,6 +83,7 @@ footer p {
   padding-top: 20px;
   margin-right: 58px;
   vertical-align: top;
+  text-align: left;
 }
 
 .form {
@@ -95,6 +96,7 @@ footer p {
   color: whitesmoke;
   border: none;
   margin-right: 58px;
+  margin-top: 30px;
 }
 
 .i-text {
@@ -108,6 +110,20 @@ footer p {
   font-family: robo;
 }
 
+.r-up {
+  font-size: 15px;
+  font-family: robo;
+  margin-top: 23px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .text {
-  padding-top: 7px;
+  padding-top: 20px;
+}
+
+.box {
+  text-align: center;
 }
