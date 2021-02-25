@@ -1,0 +1,7 @@
+.s-img {
+  background-image: url("/assets/images/s-home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 1170px;
+}

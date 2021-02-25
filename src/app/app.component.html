@@ -6,42 +6,43 @@
   <title>Splizzy</title>
 </head>
 <body>
-  <div class="container">
-    <div class="sneak-img">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="contain">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Splizzy</a>
+          <a class="navbar-brand" href="home">Splizzy</a>
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Shop Sneakers</a>
+              <a class="nav-link" aria-current="page" href="#">Shop Sneakers</a>
               <a class="nav-link" href="#">Releases</a>
+              <a routerLink="login"><i class="bi bi-person"></i></a>
+              <a routerLink="cart"><i class="bi bi-bag"></i></a>
             </div>
         </div>
       </nav>
-    </div>
-    <div class="footer">
-      <div class="box">
-        <div class="form">
-          <p class="r-up">Get Release Updates</p>
-          <form action="">
-            <input type="text" class="i-text">
-            <input type="submit" class="b-form">
-          </form>
-        </div>
-        <div class="r-update">
-          <p class="p-title">Customer Service</p>
-          <p>Track your order</p>
-          <p>FAQ</p>
-          <p>Delivery and Returns</p>
-          <p>Contact us</p>
-        </div>
-        <div class="about">
-          <p class="p-title">About Splizzy</p>
-          <p>Our history</p>
-          <p>jobs</p>
-        </div>
-        <p class="text">2021 powered and designed by Michael Kirkaldy</p>
-      </div>
-   </div>
+    <router-outlet></router-outlet>
   </div>
+  <div class="footer">
+    <div class="box">
+      <div class="form">
+        <p class="r-up">Get Release Updates</p>
+        <form action="">
+          <input type="text" class="i-text">
+          <input type="submit" class="b-form">
+        </form>
+      </div>
+      <div class="r-update">
+        <p class="p-title">Customer Service</p>
+        <p>Track your order</p>
+        <p>FAQ</p>
+        <p>Delivery and Returns</p>
+        <p>Contact us</p>
+      </div>
+      <div class="about">
+        <p class="p-title">About Splizzy</p>
+        <p>Our history</p>
+        <p>jobs</p>
+      </div>
+      <p class="text">2021 powered and designed by Michael Kirkaldy</p>
+    </div>
+ </div>
 </body>
 </html>

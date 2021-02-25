@@ -1,10 +1,5 @@
 
 
-* {
-  margin: 0 auto;
-  padding: 0;
-}
-
 @font-face {
   font-family: empire;
   src: url("/assets/fonts/krink.ttf");
@@ -20,24 +15,36 @@
   display: inline-block;
 }
 
+div.contain {
+  margin: 0px;
+  height: 1122px;
+  padding: 0px;
+}
+
 nav {
   padding-top: 25px;
+  width: 2730px;
+  height: 200px;
+  background-color: rebeccapurple;
+}
+
+.container-fluid {
+  padding-left: 0px;
+}
+
+.navbar {
+  padding-left: 0px;
+  padding: 0px;
+  height: 120px;
 }
 
 .active{
   margin-right: 40px;
 }
 
-.sneak-img {
-  background-image: url("/assets/images/s-home.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 1170px;
-}
-
-.container-fluid {
-  width: 900px;
+.nav-link {
+  display: inline-block;
+  margin-right: 25px;
 }
 
 .navbar-nav {
@@ -48,11 +55,10 @@ a.navbar-brand {
   text-decoration: none;
   font-size: 60px;
   margin-right: 60px;
-  padding: 50px;
-  padding-top: 30px;
   font-family: empire;
+  padding-left: 50px;
   font-weight: bold;
-  color: whitesmoke;
+  color: black;
   letter-spacing: 7px;
 }
 
@@ -71,7 +77,7 @@ a.nav-link {
 
 .footer {
   background-color: black;
-  height: 185px;
+  height: 208px;
 }
 
 .footer p {
@@ -96,17 +102,16 @@ a.nav-link {
   color: whitesmoke;
   border: none;
   margin-right: 58px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .i-text {
-  height: 25px;
+  height: 38px;
 }
 
 .p-title {
   font-weight: bold;
   font-size: 15px;
-  padding-bottom: 20px;
   font-family: robo;
 }
 
@@ -118,10 +123,12 @@ a.nav-link {
 
 p {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 .text {
   padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .box {
