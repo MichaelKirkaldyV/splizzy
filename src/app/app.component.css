@@ -134,3 +134,16 @@ p {
 .box {
   text-align: center;
 }
+
+.far {
+  margin-right: 25px;
+  color: black;
+}
+
+.fas {
+  color: black;
+}
+
+.link-s {
+  margin-right: 1900px;
+}
