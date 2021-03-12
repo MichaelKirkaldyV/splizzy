@@ -35,7 +35,8 @@ nav {
 .navbar {
   padding-left: 0px;
   padding: 0px;
-  height: 120px;
+  height: 100px;
+  width: 100%;
 }
 
 .active{
@@ -69,6 +70,11 @@ a.nav-link {
   font-family: robo;
   letter-spacing: 4px;
   color: whitesmoke;
+  margin-right: 30px;
+}
+
+.far {
+  margin-left: 1700px;
 }
 
 .text {
