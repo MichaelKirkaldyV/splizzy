@@ -19,8 +19,7 @@
 .shoe-list {
   display: inline-block;
   vertical-align: top;
-  margin-top: 50px;
-  height: 600px;
+  height: 1100px;
   width: 1000px;
 }
 
@@ -42,3 +41,13 @@ img {
 a {
   text-decoration: none;
 }
+
+.shoe-sz {
+  border:1px solid;
+  list-style-type: none;
+  width: 30px;
+  display: inline-block;
+  margin: 5px;
+}
+
+
