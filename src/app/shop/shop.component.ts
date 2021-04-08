@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../http.service'
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-shop',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShopComponent implements OnInit {
 
-  constructor() { }
+  shoes: any;
+
+  constructor(private _http: HttpService,
+              private _router: Router,
+              private _route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.getShoes()
+  }
+
+  getShoes(){
+    this._http.getAllShoes().subscribe( data => {
+      this.shoes = data
+      console.log("Shoes---", data)
+    })
   }
 
 }
