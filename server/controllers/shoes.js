@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
-var MSvie = mongoose.model('Shoe')
+const { userInfo } = require('node:os');
+var Shoe = mongoose.model('Shoe')
 
 
 
@@ -15,6 +16,10 @@ module.exports = {
            res.json(data)
         }
      })
+    },
+
+    register: function(req, res) {
+      pass
     }
 
 };//End of exports

@@ -11,4 +11,8 @@ export class HttpService {
   getAllShoes() {
     return this.http.get('/api/allShoes')
   }
+
+  registerUser(user) {
+    return this.http.post('/api/register', user)
+  }
 }
