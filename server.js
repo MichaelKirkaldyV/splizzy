@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 var path = require("path");
 var bodyParser = require('body-parser');
 
-app.use(express.static( __dirname + '/public/dist/public' ));
+app.use(express.static( __dirname + 'public' ));
 
 app.use(bodyParser.json());
 
