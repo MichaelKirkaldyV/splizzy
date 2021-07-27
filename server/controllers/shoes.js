@@ -1,5 +1,4 @@
 var mongoose = require('mongoose');
-const { userInfo } = require('node:os');
 var Shoe = mongoose.model('Shoe')
 
 
@@ -14,6 +13,7 @@ module.exports = {
         }
         else {
            res.json(data)
+           console.log("All the shoes...-", data);
         }
      })
     },

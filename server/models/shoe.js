@@ -5,6 +5,7 @@ var ShoeSchema = new mongoose.Schema({
 	brand: {type: String},
 	price: {type: Number},
 	name: {type: String},
+	url: {type: String},
 }, {timestamps: true});
 
 var UserSchema = new mongoose.Schema({

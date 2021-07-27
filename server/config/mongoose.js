@@ -4,7 +4,13 @@ var path = require("path");
 var fs = require('fs');
 
 //connecting database defined in terminal.
-mongoose.connect('mongodb://localhost/shoe');
+mongoose.connect('mongodb://localhost/shoe' , { useUnifiedTopology: true, useNewUrlParser: true }, function(err, db) {
+  if (err) {
+      console.log('Unable to connect to the server. Please start the server. Error:', err);
+  } else {
+      console.log('Connected to Server successfully!');
+  }
+});
 
 // create a variable that points to the models folder
 var models_path = path.join(__dirname, './../models');
