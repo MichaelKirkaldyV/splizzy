@@ -42,76 +42,12 @@
     </ul>
   </div>
   <div class="shoe-list">
-    <div class="shoe">
+    <div class="shoe" *ngFor="let shoe of shoes; let i = index">
       <a href="details">
-        <img src="https://cdn.flightclub.com/3500/TEMPLATE/253215/1.jpg" alt="">
-        <p class="stats">Nike</p>
-        <p class="stats">Dunk Low 'black White'</p>
-        <p class="stats">$275+</p>
-      </a>
-    </div>
-    <div class="shoe">
-      <a href="details">
-        <img src="https://cdn.flightclub.com/3500/TEMPLATE/135278/1.jpg" alt="">
-        <p class="stats">Nike</p>
-        <p class="stats">Air Jordan 1 Retro OG 'Pine Green 2.0'</p>
-        <p class="stats">$240+</p>
-      </a>
-    </div>
-    <div class="shoe">
-      <a href="details">
-        <img src="https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/803976_01.jpg" alt="">
-        <p class="stats">Nike</p>
-        <p class="stats">Air Jordan 4 'Cactus Jack'</p>
-        <p class="stats">Sold Out</p>
-      </a>
-    </div>
-    <div class="shoe">
-      <a href="details">
-        <img src="https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/1/3/139813_1.jpg" alt="">
-        <p class="stats">Nike</p>
-        <p class="stats">Air Jordan 4 Retro Bred 2019 release</p>
-        <p class="stats">$240+</p>
-      </a>
-    </div>
-    <div class="shoe">
-      <a href="details">
-        <img src="https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/801781_01.jpg" alt="">
-        <p class="stats">Nike</p>
-        <p class="stats">Air Jordan 1 'Off-White</p>
-        <p class="stats">Sold Out</p>
-      </a>
-    </div>
-    <div class="shoe">
-      <a href="details">
-        <img src="https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/805205_01.jpg" alt="">
-        <p class="stats">Nike</p>
-        <p class="stats">Air Jordan 1 Retro OG 'Pine Green 2.0'</p>
-        <p class="stats">$240+</p>
-      </a>
-    </div>
-    <div class="shoe">
-      <a href="details">
-        <img src="https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/a/i/air-jordan-5-retro-supreme-supreme-bamboo-black-classic-stone-chino-012316_1.jpg" alt="">
-        <p class="stats">Nike</p>
-        <p class="stats">Air Jordan 5 'Supreme</p>
-        <p class="stats">$240+</p>
-      </a>
-    </div>
-    <div class="shoe">
-      <a href="details">
-        <img src="https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/805206_01.jpg" alt="">
-        <p class="stats">Adidas</p>
-        <p class="stats">Yeezy Boost 700 v2 'Static Wave Runner'</p>
-        <p class="stats">$240+</p>
-      </a>
-    </div>
-    <div class="shoe">
-      <a href="details">
-        <img src="https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/802389_01.jpg" alt="">
-        <p class="stats">Adidas</p>
-        <p class="stats">Yeezy Boost 350 v2 "Beluga</p>
-        <p class="stats">$240+</p>
+        <img src="{{shoe.url}}" alt="">
+        <p class="stats">{{shoe.title}}</p>
+        <p class="stats">{{shoe.name}}</p>
+        <p class="stats">{{shoe.price}}</p>
       </a>
     </div>
   </div>
