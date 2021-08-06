@@ -43,7 +43,7 @@
   </div>
   <div class="shoe-list">
     <div class="shoe" *ngFor="let shoe of shoes; let i = index">
-      <a href="details">
+      <a [routerLink]="['/details/', shoe._id]">
         <img src="{{shoe.url}}" alt="">
         <p class="stats">{{shoe.title}}</p>
         <p class="stats">{{shoe.name}}</p>

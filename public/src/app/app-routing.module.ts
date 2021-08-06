@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'releases', component: ReleasesComponent },
   { path: 'shop', component: ShopComponent },
   { path: 'account', component: AccountComponent },
-  { path: 'details', component: DetailsComponent },
+  { path: 'details/:id', component: DetailsComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: '', pathMatch: 'full', redirectTo: '/home' }
 ];
