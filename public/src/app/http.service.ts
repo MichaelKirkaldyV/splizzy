@@ -13,7 +13,7 @@ export class HttpService {
   }
 
   getThisShoe(shoe) {
-    return this.http.post('/api/getShoe', shoe)
+    return this.http.get('/api/getShoe/' +shoe)
   }
 
   registerUser(user) {

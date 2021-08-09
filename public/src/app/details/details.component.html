@@ -1,29 +1,34 @@
 <div class="container">
   <div class="shoe-img">
-    <img class="shoe-main" src="https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/803976_01.jpg" alt="small_shoes_images">
+    <img class="shoe-main" src={{shoe.url}} alt="small_shoes_images">
   </div>
   <div class="shoe-d">
-    <h1 class="brand"></h1>
-    <p class="name"></p>
-    <p class="release"></p>
-    <p class="color"></p>
-    <h1 class="price"></h1>
+    <h1 class="brand">{{shoe.brand}}</h1>
+    <p class="name">{{shoe.name}}</p>
+    <p class="release">Release: <b>X/X/20XX</b></p>
+    <h1 class="price">Retail Price: $350</h1>
     <p>AVAILABLE SIZES (US MEN SIZE)</p>
     <div class="button-row"></div>
     <button class="add-to-cart"></button>
   </div>
   <div class="row">
     <div class="shoe-si">
-      <img  class="thumb" src="https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/803976_02.jpg" alt="small_shoes_images">
+      <img  class="thumb" src={{shoe.url}} alt="small_shoes_images">
     </div>
     <div class="shoe-si">
-      <img  class="thumb" src="https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/803976_03.jpg" alt="small_shoes_images">
+      <img  class="thumb" src={{shoe.url}} alt="small_shoes_images">
     </div>
     <div class="shoe-si">
-      <img  class="thumb" src="https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/803976_04.jpg" alt="small_shoes_images">
+      <img  class="thumb" src={{shoe.url}} alt="small_shoes_images">
     </div>
     <div class="shoe-si">
-      <img  class="thumb" src="https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/803976_01.jpg" alt="small_shoes_images">
+      <img  class="thumb" src={{shoe.url}} alt="small_shoes_images">
     </div>
+  </div>
+
+  <div class="carousel">
+    <ngb-carousel >
+
+    </ngb-carousel>
   </div>
 </div>

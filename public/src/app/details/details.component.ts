@@ -10,8 +10,8 @@ import { HttpService } from '../http.service'
 })
 export class DetailsComponent implements OnInit {
 
+  shoe_id: any;
   shoe: any;
-  shoe_: any;
 
   constructor(private _route: ActivatedRoute,
               private _router: Router,
@@ -19,19 +19,20 @@ export class DetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getParams()
-    this.getShoe()
+    console.log(this.shoe_id)
   }
 
   getParams() {
     this._route.params.subscribe(params => {
       console.log("Here is the parameter...", params)
-      this.shoe = params['id']
+      this.shoe_id = params['id']
+      this.getShoe()
     })
   }
 
   getShoe() {
-    this._http.getThisShoe(this.shoe).subscribe(data => {
-      this.shoe_ = data
+    this._http.getThisShoe(this.shoe_id).subscribe(data => {
+      this.shoe = data
       console.log("Shoe data requested-", data)
     })
   }

@@ -20,6 +20,20 @@ module.exports = {
 
     register: function(req, res) {
       pass
+    },
+
+    getOneShoe: function(req, res) {
+       Shoe.findById({_id: req.params.id}, function(err, data){
+          if (err) {
+             console.log("Err----", err)
+             res.json(err)
+          } 
+          else {
+            console.log("Shoe found--", data)
+            res.json(data)
+          }
+
+       })
     }
 
 };//End of exports
