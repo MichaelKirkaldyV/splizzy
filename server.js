@@ -4,7 +4,7 @@ var app = express();
 var mongoose = require('mongoose');
 var path = require("path");
 var bodyParser = require('body-parser');
-var PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.static( __dirname + "/public/dist" ));
 
